@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="отношения, знакомства, интим, любовь, семья, дети">
+    <meta name="description" content="Давно искали любовь всей вашей жизни?
+    ДА ЕЩЕ И РЯДОМ?! Для отношений, легкого знакомства, интима без обязательств;
+    а может вы ищете настоящую любовь для создания семьи? Наш сайт вам поможет!">
+    <link href="outlines.css" rel="stylesheet">
+    <title>Веб-доска «быстрые знакомства рядом»</title>
+    <script src="scripts/hearts-flowing.js"></script>
+    <script src="scripts/load-time.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>
+        <img src="assets/icons8-favorite-96.png" style="border:4px groove skyblue; height: 24px" alt="LOVE LOGO"
+             class="logo">
+        <i>Love IS ...</i> <br>Добро пожаловать!</h1>
+</header>
+<main>
+    <nav class="menu">
+        <ul class="menu">
+            <li class="crumb"><a href="index.html" class="">Введение</a></li>
+            <li class="crumb"><a href="qualities.html" class="">О сайте</a></li>
+            <li class="crumb"><a href="forms.html" class="">Анкеты</a></li>
+            <li class="crumb"><a href="constructor.html" class="">Конструктор</a></li>
+            <li class="crumb"><a href="board.html" class="">Веб-доска</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        var currentPage = document.location.pathname;
+
+        var menuItems = document.querySelectorAll('li');
+
+        for (var i = 0; i < menuItems.length; i++) {
+            var link = menuItems[i].querySelector('a');
+            if (currentPage.includes(link.getAttribute('href'))) {
+                link.classList.add('current_page');
+            }
+        }
+    </script>
+
+    <div id="introduction">
+        <h2>Вы попали на сайт знакомств ❤</h2>
+        <h3>Вам есть 18 лет?</h3>
+        <aside>
+            <p><i>P.S.</i> Даже если нет, мы все равно не сможем это проверить. Так что совет-да любовь!</p>
+        </aside>
+        <img src="assets/ukupnik.png" style="width: 25vw; border:4px double grey" alt="LOCK" id="ukupnik">
+        <br>
+    </div>
+</main>
+
+<footer>
+    <div id="footer">
+        <div class="load-time">
+            <p class="load-time" id="load-time">page load time: </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
